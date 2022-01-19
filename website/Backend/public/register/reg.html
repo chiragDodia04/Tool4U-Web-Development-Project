@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title>TOOL4U | Registration Page</title>
+</head>
+
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+            <div class="container">
+                <div class="form ">
+                    <h2>Registration Form</h2>
+                    <form method="POST" name="RegForm" onsubmit="return reg()" action="/register" autocomplete="off">
+                        <div class="inputBox">
+                            <input type="text" placeholder="Full Name" name="FullName" >
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" placeholder="Contact" name="Contact" required pattern="[0-9]{10}" title= "10 digit Number is Required" >
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Email id" name="EmailID" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Confirm Password" name="Confirmpasswd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> 
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit"  value="Submit">
+                        </div>
+                        <p class="forget">Already have an account?<a href="/login/login.html"> Login </a></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function reg(){
+            var name = document.forms["RegForm"]["FullName"];
+        var email = document.forms["RegForm"]["EmailID"];
+        var phone = document.forms["RegForm"]["Contact"];
+        var password = document.forms["RegForm"]["password"];
+        var Confirmpasswd= document.forms["RegForm"]["Confirmpasswd"];
+  
+        if (name.value == "") {
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+        }
+  
+        if (address.value == "") {
+            window.alert("Please enter your address.");
+            address.focus();
+            return false;
+        }
+  
+        if (email.value == "") {
+            window.alert(
+              "Please enter a valid e-mail address.");
+            email.focus();
+            return false;
+        }
+  
+        if (phone.value == "") {
+            window.alert(
+              "Please enter your telephone number.");
+            phone.focus();
+            return false;
+        }
+  
+        if (password.value == "") {
+            window.alert("Please enter your password");
+            password.focus();
+            return false;
+        }
+  
+        if (Confirmpasswd == "") {
+            alert("Please enter your Confirm password");
+            what.focus();
+            return false;
+        }
+  
+        return alert("Registration is Successfully Done!!!!!");
+    }
+        
+    </script>
+</body>
+
+</html>

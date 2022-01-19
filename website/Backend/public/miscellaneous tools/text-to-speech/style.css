@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Play';
+    background-color:#7ee8fa ;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+  
+    background-image:
+    radial-gradient(circle at 100% 150%,#7ee8fa  24%, #fff 25%, #fff 28%,#7ee8fa  29%,#7ee8fa  36%, #fff 36%, #fff 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%,#7ee8fa  24%, #fff 25%, #fff 28%,#7ee8fa  29%,#7ee8fa  36%, #fff 36%, #fff 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #fff 10%,#7ee8fa  11%,#7ee8fa  23%, #fff 24%, #fff 30%,#7ee8fa  31%,#7ee8fa  43%, #fff 44%, #fff 50%,#7ee8fa  51%,#7ee8fa  63%, #fff 64%, #fff 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #fff 5%,#7ee8fa  6%,#7ee8fa  15%, #fff 16%, #fff 20%,#7ee8fa  21%,#7ee8fa  30%, #fff 31%, #fff 35%,#7ee8fa  36%,#7ee8fa  45%, #fff 46%, #fff 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, #fff 5%,#7ee8fa  6%,#7ee8fa  15%, #fff 16%, #fff 20%,#7ee8fa  21%,#7ee8fa  30%, #fff 31%, #fff 35%,#7ee8fa  36%,#7ee8fa  45%, #fff 46%, #fff 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+    
+  }
+  
+  .voiceinator {
+    padding: 2rem;
+    width: 50rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    width: calc(100% + 4rem);
+    margin: -2rem 0 2rem -2rem;
+    padding: .5rem;
+    background-image: linear-gradient(315deg,  #5de6de 0%, #b58ecc 74%);
+    border-bottom: 5px solid #4ae752;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px 0 #2bff00;
+  }
+  
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    font-size: 2rem;
+    background: #F7F7F7;
+    outline: 0;
+  }
+  
+  textarea {
+    height: 20rem;
+  }
+  
+  
+  .voiceinator button {
+    background-image: linear-gradient(315deg,  #5de6de 0%, #b58ecc 74%);
+    border: 0;
+    width: 49%;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 5px solid #00ff15;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .voiceinator button:active {
+    top: 2px;
+  }
+  
+  .voiceinator button:nth-of-type(1) {
+    margin-right: 2%;
+  }

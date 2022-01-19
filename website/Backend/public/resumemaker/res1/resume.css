@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play';
+} 
+
+.box{
+    background-image: linear-gradient(to right,#80ff72 ,#7ee8fa); 
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486);
+
+}
+#resume-template {
+    display: none; 
+    width: 100%;
+    margin: 20px auto;
+}  
+
+.myImg {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background {
+    background-color: rgb(11, 202, 202);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+#objectiveT {
+    width: auto;
+}
+
+@media (max-width: 786px) {
+    #resume-template {
+        width: 100;
+        margin: 10px auto;
+    }  
+}
+
+@media print {
+    body *{
+        visibility: hidden;
+    }
+    #resume-template *{
+        visibility: visible;
+    }
+}

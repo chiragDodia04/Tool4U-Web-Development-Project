@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    font-family: 'Play';
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+   
+}
+
+.container{
+   
+    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    min-height: 500px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.288);
+}
+.quote{
+    background-color: #f4eafa;
+    border-radius: 20px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background: #1662d3;
+    border: none;
+    border-bottom: 2px solid #140557;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+    border-radius: 8px;
+}
+
+p{
+    font-size: 35px;
+}
+
+button:hover{
+    background-color: rgb(0, 223, 211);
+}

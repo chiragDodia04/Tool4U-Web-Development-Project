@@ -1,0 +1,224 @@
+/* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family:'Play';
+  font-size: 1.6rem;
+
+}
+.whole{
+    margin-top: 10px;
+    background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486);
+}
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #396684;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  
+  border-radius: 15px;
+}
+
+/* Header */
+
+.header {
+    
+  color: rgb(0, 0, 0);
+ 
+  padding: 1.6rem 0;
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: .4rem;
+}
+
+.header__subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+   
+    margin-left: 115px;
+    width: 8em;
+    padding: .8rem;
+    
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+   
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between;
+
+}
+.actions__container--spaced a{
+     text-decoration: none;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        padding:10px;     
+}
+
+.actions__container--spaced a:hover{
+    background-color: rgba(0, 140, 255, 0.932);
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+  }
+/* Form Inputs */
+
+.input {
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+}
+
+.dropdown {
+    border-radius: 0;
+    border: 1px solid #DEDFE0;
+    background: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+}
+
+.button {
+    background: #0466f8;
+    border: none;
+    border-bottom: 2px solid #140557;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background: #6fa1e4;
+}
+
+.button--secondary {
+    background: #0466f8;
+    border-bottom: 2px solid #140557;
+    border-radius: 8px;
+    transition: background .3s ease;
+}
+
+.button--secondary:hover {
+    background: #2884fc;
+}
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #eeeeee;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+}
+.homebtn a{
+position: relative;
+display: inline-block;
+padding: 12px 36px;
+margin-top: 90px;
+margin-left: 230px;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 18px;
+letter-spacing: 2px;
+border-radius: 40px;
+background: linear-gradient(90deg,#0162c8,#55e7fc);
+opacity: 60%;
+}

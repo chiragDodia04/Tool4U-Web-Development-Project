@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Play';
+}
+body{
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+  background-image: linear-gradient(to right,#80ff72 ,#7ee8fa); 
+   
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.homebtn{ 
+	display: flex;
+  margin: 30px 30px ;
+	border-radius: 10px;
+	background: rgba(238, 255, 253, 0.767); 
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.288);
+}
+
+.btn{
+	margin-left: 30px;
+}
+
+.homebtn h1{
+	margin-left: 350px;
+	margin-top: 10px;
+	font-weight: 1300;
+  
+}
+
+
+.homebtn a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+	border-radius: 40px;
+	background: linear-gradient(90deg,#0162c8,#55e7fc);
+    opacity: 60%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.486);
+  
+}
+
+.main{
+     padding-left: 40px;
+     font-family: 'Play';
+ }
+
+   
+.card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+
+.card:hover,
+.card:focus {
+    transform: scale3d(1.050, 1.050, 1);
+    transition: transform .3s ease-out 0s;
+  }
+     
+
+
+
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     
+   
+    
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     
+    }
+
+  .card h1{
+     font-size: 20px;
+     
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+     padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: none;
+     border-radius: 10px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: rgba(0, 140, 255, 0.932);
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+   
